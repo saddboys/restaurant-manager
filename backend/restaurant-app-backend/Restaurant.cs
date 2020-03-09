@@ -4,6 +4,6 @@ namespace restaurant_app_backend
 {
     public class Restaurant
     {
-        public string Name { get; set; }
+        public string Name { get; private set; }
     }
 }
