@@ -8,12 +8,12 @@ using Microsoft.Extensions.Logging;
 namespace restaurant_app_backend.Controllers
 {
     [ApiController]
-    [Route("test")]
+    [Route("restaurant")]
     public class RestaurantController : ControllerBase
     {
-        private static readonly string[] Names = new[]
+        private static readonly Restaurant[] RESTAURANTS = new[]
         {
-            "Restaurant 1", "Restaurant 2"
+            new Restaurant("Restaurant 1"), new Restaurant("Restaurant 2")
         };
 
         private readonly ILogger<RestaurantController> _logger;
@@ -24,9 +24,9 @@ namespace restaurant_app_backend.Controllers
         }
 
         [HttpGet]
-        public String[] Get()
+        public Restaurant[] GetAllRestaurants()
         {
-            return Names;
+            return RESTAURANTS;
         }
     }
 }

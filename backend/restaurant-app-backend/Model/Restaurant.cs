@@ -5,5 +5,10 @@ namespace restaurant_app_backend
     public class Restaurant
     {
         public string Name { get; private set; }
+
+        public Restaurant(string Name)
+        {
+            this.Name = Name;
+        }
     }
 }
