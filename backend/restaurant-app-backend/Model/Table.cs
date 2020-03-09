@@ -11,12 +11,13 @@ namespace restaurant_app_backend.Model
         public int Id;
         public List<Availability> AvailabilityList;
 
-        public Table(int minGuests, int maxGuests)
+        public Table(int minGuests, int maxGuests, List<Availability> availabilityList)
         {
             this.MinGuests = minGuests;
             this.MaxGuests = maxGuests;
             this.Id = _counter;
             Interlocked.Add(ref _counter, 1);
+            this.AvailabilityList = availabilityList;
         }
     }
 }

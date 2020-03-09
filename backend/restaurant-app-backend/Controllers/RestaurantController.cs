@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using restaurant_app_backend.Model;
@@ -17,11 +14,24 @@ namespace restaurant_app_backend.Controllers
         {
             new Restaurant("Restaurant 1", new List<Table>()
             {
-                new Table(1, 2), new Table(1, 2), new Table(2, 4)
+                new Table(1, 2, new List<Availability>() {new Availability(new DateTime(2020, 11, 5, 11, 9, 0), 
+                    Time.MAP.GetValueOrDefault("9am"), 
+                    Time.MAP.GetValueOrDefault("10am"))}), 
+                new Table(1, 2, new List<Availability>() {new Availability(new DateTime(2020, 11, 5, 11, 9, 0), 
+                    Time.MAP.GetValueOrDefault("9am"), 
+                    Time.MAP.GetValueOrDefault("10am"))}), 
+                new Table(2, 4, new List<Availability>() {new Availability(new DateTime(2020, 11, 5, 11, 9, 0), 
+                    Time.MAP.GetValueOrDefault("9am"), 
+                    Time.MAP.GetValueOrDefault("10am"))})
             }), 
             new Restaurant("Restaurant 2", new List<Table>()
             {
-                new Table(1, 1), new Table(6,8)
+                new Table(1, 1, new List<Availability>() {new Availability(new DateTime(2020, 11, 5, 11, 9, 0), 
+                    Time.MAP.GetValueOrDefault("9am"), 
+                    Time.MAP.GetValueOrDefault("10am"))}), 
+                new Table(6, 8, new List<Availability>() {new Availability(new DateTime(2020, 11, 5, 11, 9, 0), 
+                    Time.MAP.GetValueOrDefault("9am"), 
+                    Time.MAP.GetValueOrDefault("10am"))})
             })
         };
 
