@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using restaurant_app_backend.Model;
 
 namespace restaurant_app_backend.Controllers
 {
@@ -11,7 +12,7 @@ namespace restaurant_app_backend.Controllers
     [Route("availabilities")]
     public class AvailabilitiesController : ControllerBase
     {
-        private static readonly Availability[] AVAILABILITIES = new[]
+        private static readonly Availability[] Availabilities = new[]
         {
             new Availability(new DateTime(2020, 11, 5, 11, 9, 0), 
                 Time.MAP.GetValueOrDefault("9am"), 
@@ -26,13 +27,9 @@ namespace restaurant_app_backend.Controllers
         }
 
         [HttpGet]
-        public Availability[] GetAvailabilities(string restaurant, DateTime date)
+        public Availability[] GetAvailabilities(Table table, DateTime date)
         {
-            if (restaurant == null || date == null)
-            {
-                return null;
-            }
-            return AVAILABILITIES;
+            return Availabilities;
         }
         
         

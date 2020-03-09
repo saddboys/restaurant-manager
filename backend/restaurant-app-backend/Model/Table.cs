@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.Collections.Generic;
+using System.Threading;
 
 namespace restaurant_app_backend.Model
 {
@@ -8,6 +9,7 @@ namespace restaurant_app_backend.Model
         public int MinGuests;
         public int MaxGuests;
         public int Id;
+        public List<Availability> AvailabilityList;
 
         public Table(int minGuests, int maxGuests)
         {
