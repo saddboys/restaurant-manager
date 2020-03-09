@@ -4958,11 +4958,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\willi\\Documents\\GitHub\\restaurant-manager\\backend\\restaurant-app-backend\\restaurant-app-backend.csproj",
+      "projectUniqueName": "C:\\Users\\willi\\RiderProjects\\restaurant-manager\\backend\\restaurant-app-backend\\restaurant-app-backend.csproj",
       "projectName": "restaurant-app-backend",
-      "projectPath": "C:\\Users\\willi\\Documents\\GitHub\\restaurant-manager\\backend\\restaurant-app-backend\\restaurant-app-backend.csproj",
+      "projectPath": "C:\\Users\\willi\\RiderProjects\\restaurant-manager\\backend\\restaurant-app-backend\\restaurant-app-backend.csproj",
       "packagesPath": "C:\\Users\\willi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\willi\\Documents\\GitHub\\restaurant-manager\\backend\\restaurant-app-backend\\obj\\",
+      "outputPath": "C:\\Users\\willi\\RiderProjects\\restaurant-manager\\backend\\restaurant-app-backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

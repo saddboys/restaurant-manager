@@ -1,4 +1,5 @@
-﻿bin/*
-obj/*
+﻿backend/restaurant-app-backend/bin/*
+backend/restaurant-app-backend/obj/*
+backend/restaurant-app-backend/.idea/*
 .idea/*
 *.csproj

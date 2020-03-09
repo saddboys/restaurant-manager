@@ -11,7 +11,7 @@ namespace restaurant_app_backend.Controllers
     [Route("restaurant")]
     public class RestaurantController : ControllerBase
     {
-        private static readonly Restaurant[] RESTAURANTS = new[]
+        private static readonly Restaurant[] MockRestaurants = new[]
         {
             new Restaurant("Restaurant 1"), new Restaurant("Restaurant 2")
         };
@@ -26,7 +26,7 @@ namespace restaurant_app_backend.Controllers
         [HttpGet]
         public Restaurant[] GetAllRestaurants()
         {
-            return RESTAURANTS;
+            return MockRestaurants;
         }
     }
 }

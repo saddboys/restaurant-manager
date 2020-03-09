@@ -34,5 +34,7 @@ namespace restaurant_app_backend.Controllers
             }
             return AVAILABILITIES;
         }
+        
+        
     }
 }
