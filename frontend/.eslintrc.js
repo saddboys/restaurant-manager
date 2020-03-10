@@ -25,5 +25,6 @@ module.exports = {
   rules: {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "quotes": [2,"double", { "allowTemplateLiterals": true}],
+    "linebreak-style": 0,
   },
 };
